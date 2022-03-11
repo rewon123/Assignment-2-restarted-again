@@ -1,0 +1,151 @@
+/* Google Font */
+    body{
+        font-family: 'Poppins', sans-serif;
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+/*------------
+      top 
+-------------*/
+.top{
+    width: 100%;
+    height: 590px;
+    display: flex;
+    justify-content: center;
+    background-color: #2D25A0;
+}
+.container {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.top-images{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.top-title{
+    font-size:60px;
+    color: white;
+}
+
+#top-image {
+    width: 80%;
+}
+
+.top:hover #top-image{
+    transform: scale(1.1,1.1);
+    transition: transform .5s ease;
+}
+
+.watch-live-btn{
+    text-decoration: none;
+    color: white;
+    background-color:#E02C6D;
+    padding: 12px 40px;
+}
+
+/*------------
+    Middle (Players) 
+-------------*/
+
+.players-content{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.players{
+    width: 80%;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 65px;
+    margin-top:70px;
+}
+.player{
+    height: 100%;
+    padding: 20px;
+    box-shadow: 5px 5px 30px #dddddd;
+    border-radius:5px;
+}
+
+.player-img img{
+    Width:100%;
+}
+
+/*------------
+    Bottom 
+-------------*/
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top:150px;
+}
+.bottom-container{
+    width:50%;
+    text-align: center;
+}
+.bottom-img{
+    display: flex;
+    justify-content: center;
+    margin-bottom:40px;
+}
+
+.logo-img{
+    width:60%;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+.social-icon{
+    font-size: 100%;
+    color: #868686;
+    padding: 2%;
+    margin: 2%;
+    background-color: #d8d8d8;
+    border-radius: 100%;
+}
+
+
+/*------------
+  Responsive tablet
+-------------*/
+@media only screen and (max-width: 1080px) {
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .top-title{
+        font-size:40px;
+    }
+
+}
+/*------------
+  Responsive Mobile
+-------------*/
+@media only screen and (max-width: 688px) {
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    .container {
+        width: 80%;
+        display: block;
+    }
+    .top-images {
+        margin: 80px 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
